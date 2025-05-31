@@ -23,6 +23,34 @@ html {
     font-variation-settings: normal
 }
 
+/* @media (max-width: 1920px) and (min-width: 768px) {
+    html {
+      zoom: 90%;
+    }
+    @-ms-viewport {
+      width: 1920px;
+    }
+  } */
+
+  /* 默认：大屏（>=1920px），100% 缩放 */
+html {
+    font-size: 16px;
+  }
+  
+  /* 中等屏幕（>=768px 且 <1920px），缩放相当于 zoom: 90% */
+  @media (max-width: 1920px) and (min-width: 768px) {
+    html {
+      font-size: 14.4px; /* 16px * 0.9 = 14.4px */
+    }
+  }
+  
+  /* 小屏幕（<768px）——手机适配 */
+  @media (max-width: 767px) {
+    html {
+      font-size: 14px;
+    }
+  }
+
 body {
     margin: 0;
     line-height: inherit
