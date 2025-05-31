@@ -2258,10 +2258,10 @@ html {
     font-display: swap
 }
 
-body {
+/* body {
     cursor: url(https://cdn.idealclover.cn/Projects/homepage/cursor.ico), auto;
     font-family: MaokenZhuyuanTi
-}
+} */
 
 .mail {
     background: url(https://cdn.idealclover.cn/Projects/homepage/icons.png) -0px -0px no-repeat;
